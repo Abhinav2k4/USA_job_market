@@ -40,7 +40,7 @@ data['stateAt'] = data['location'].apply(get_states)
 st.title("USA Job Market Dashboard")
 user_input = st.text_area("Enter your full name")
 if user_input:
-    st.write(f"Hello, {user_input}! Welcome to the app!")
+    st.write(f"Hello, {user_input}!")
 
 job_profile = st.text_input("What job profile are you looking for?")
 if job_profile:
