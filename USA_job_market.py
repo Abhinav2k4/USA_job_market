@@ -38,9 +38,9 @@ def get_states(row):
 data['stateAt'] = data['location'].apply(get_states)
 
 st.title("USA Job Market Dashboard")
-user_input = st.text_area("Enter your name")
+user_input = st.text_area("Enter your full name")
 if user_input:
-    st.write(f"Hello, {user_input}! Welcome to the Ruchira's app!")
+    st.write(f"Hello, {user_input}! Welcome to the app!")
 
 job_profile = st.text_input("What job profile are you looking for?")
 if job_profile:
@@ -48,7 +48,7 @@ if job_profile:
 
 experience = st.selectbox(
     "How many years of experience do you have?",
-    options=["Select an option", "0-1 years", "1-3 years", "3-5 years", "5+ years"]
+    options=["Select an option","Internship", "0-1 years", "1-3 years", "3-5 years", "5+ years"]
 )
 if experience != "Select an option":
     st.write(f"You have selected: {experience} of experience.")    
